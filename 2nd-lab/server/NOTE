@@ -1,0 +1,5 @@
+try to build mysql service from dockerFile. In DockerFile ADD ./init.sh /init.sh. Then CMD ["/init.sh"] at the end of DockerFile
+
+ALSO sleep for 5 seconds in init.sh so that db is loaded
+
+exposing mysql service's port is unnessesary, as docker services can interact with each other by default.
